@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navigation{
+    display: flex;
+    padding:10px 45px;
+    background-color: black;
+    transition-property: background-color;
+    transition-duration: 1s;
+   
+}
+
+    
+
+.navigation:hover{
+    background-color:rgb(40, 2, 100);
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.ul li{
+    text-decoration: none;
+    font-size: 25px;
+    list-style: none;
+    margin:30px;
+    padding: 0 40px;
+    animation-name: rohit;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+   
+}
+@keyframes rohit{
+    from{
+        /* display:flex;
+        justify-content: left;
+        float:left;
+        align-items: left;    */
+        font-size: 0%;
+     }
+    to{
+        font-size: 25px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        
+    }}
+.ul li a{
+    color: white;
+}
+.ul li a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.btn{
+    display: block;
+    align-items: baseline;
+} 
+
+@media only screen and (max-width:767px) {
+    
+    .ul {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+         height:400px;
+         width:400px;
+         flex-direction: column;
+         text-align: center;
+    }
+    
+}
